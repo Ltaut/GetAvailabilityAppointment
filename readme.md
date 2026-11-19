@@ -1,7 +1,10 @@
 # GetAvailabalityAppointment
 
 Send email for notify when practicien have disponibility.
-You need the url from practicien page on doctolib or Maiia, also if you wan't 
+You need the url from practicien page on doctolib or Maiia,
+also need a motif if you don't know you can let it empty 
+and he send list of consultation reason if no match identify 
+with argument
 
 
 ## Requirements
@@ -13,8 +16,8 @@ You need the url from practicien page on doctolib or Maiia, also if you wan't
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/your-project.git
-cd your-project
+git clone https://github.com/luday94/GetAvailabilityAppointment.git
+cd GetAvailabilityAppointment
 
 # Create a virtual environment
 python -m venv venv
@@ -38,8 +41,8 @@ print(result)
 
 | Variable | Description | Default |
 |----------|-------------|---------|
-| `API_KEY` | Your API key | — |
-| `DEBUG` | Enable debug mode | `False` |
+| `url` | url from page of pratcicien  | Necesairy |
+| `consultation_reason` | Reason for scheduling the appointment. | `False` |
 
 ## Testing
 
@@ -56,4 +59,4 @@ pytest
 
 ## Licence
 
-MIT
+GNU
